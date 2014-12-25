@@ -1,0 +1,52 @@
+\chapter{Introduction}
+\emph{In this chapter we will provide some general information about general security problems, firewalls and intrusions.}
+\minitoc
+The ability to connect any computer, to any other computer through the Internet exposes a computer to two kinds of dangers:  incoming and outgoing. Incoming dangers include crackers\footnote{In Computer Science, there is a vast difference between a hacker and a cracker. Metaphorically, hackers wear the white hat: they stay entirely within the law and never access a system or network illegally. They work to expose holes in systems with the goal of fixing flaws and improving security. Crackers on the other side, wear the black hats. A cracker breaks into systems illegally, for personal gain, vandalism, or bragging rights. \citep{Cracker}} trying to enter the computer as well as viruses, spyware and other malware.  Outgoing dangers include confidential  information such as credit card numbers and passwords. As a result, mechanisms are needed to separate the `good' bits and the `bad' bits \citep{Tanenbaum}.
+
+\section{Firewalls} 
+
+One \label{sec:Firewalls}  approach is to use a firewall. A company can have many LANs connected in arbitrary ways, but all traffic to or from the company is forced  through the firewall. One can compare the firewall with an electronic drawbridge where all packets can be inspected.
+Firewalls  come  in two basic varieties: hardware and software. A hardware firewall sits between your local network of computers and the Internet. The firewall will inspect all the data that comes in from the Internet, passing along the safe data packets while blocking the potentially dangerous packets \citep{Firewall}. The hardware firewall uses a technique called packet filtering, which examines the header of a packet to determine its source and destination addresses. This information is compared to a set of predefined and/or user-created rules that determine whether the packet is legitimate or not, and thus whether it’s to be allowed in or thrown away \citep{Firewall2}.
+
+Enkele voorbeelden met poortnummers (zie Tanenbaum)
+
+In short, with a hardware firewall the connection from the ISP is plugged into the firewall,  which is connected to the LAN.  No packets can enter or exit the LAN without being approved by  the  firewall.
+
+Software firewalls do the same thing as hardware  firewalls, but in software. They are filters that attach to the network code inside the operating system kernel and filter packets the same way the hardware firewall does \citep{Tanenbaum}. 
+
+\section{Intrusions}
+
+An important aspect of the security in distributed computing\footnote{Distributed computing: A  distributed  system  is  one  in  which  components  located  at  networked  computers communicate  and  coordinate  their  actions  only  by  passing  messages. Examples include websearch and multiplayer online games \citep{Distributed}.} / networking is the ability to fend off possible intruders and identify actual intruders. Computer scientists have responded to this problem by developing intrusion detection systems, based on statistical analysis and on computer models of human detection expertise \citep{IDS}. \\ \\
+First, we will define what an intrusion actually is, before digging into intrusion detection systems. According to \citep{tr} an intrusion is \emph{any set of actions that attempt to compromise the integrity, confidentiality or availability of a resource.} That is,  the attempts or actions of unauthorized entry into an IT system. This action ranges from a reconnaissance attempt to map any existence of vulnerable services, real attacks and finally the embedding of backdoors. Such process can for example result in the creation of an illegal account with administrator privilege upon the victim machine \citep{76}. 
+
+Needless to say, using this account, the attacker can entirely control the victim's machine and this should be prevented at any price.
+
+\subsection{Intrusion Prevention Systems}
+
+There have been several approaches or technologies designed to prevent such unwanted actions. We call them Intrusion Prevention Systems or IPS. Some examples of prevention approaches or systems in existence today include antivirus, strong authentication, cryptography, patch management and the aforementioned firewalls.
+
+When an attack is identified, intrusion prevention block and log the offending data.
+
+Antivirus systems exist to prevent malicious programs such as virusses, worms and trojan horses from successfully being embedded or executed within a system. Patch management ensures deployment of the latest security patches so as to prevent system vulnerabilities from successfully exploited.
+
+Crypography is used to prevent any attempt to compromise sensitive information. Finally, strong authentication exists to prevent any attempts to fake an identity in an effort to enter a particular system \citep{76}. We already explained firewalls in section \ref{sec:Firewalls}.
+
+However, firewalls provide a prevention measure up until the application layer\footnote{Application layer of the OSI model: the application layer is the very top layer of the OSI model. It is used by network applications. These applications are what actually implement the functions performed by users to accomplish various tasks over the network. Examples include FTP, DNS and HTTP \citep{osi}.}. But this measure is commonly implemented only to port number and IP address while various intrusion attempts are intelligently exploiting vulnerability in applications which are opened by the firewall. Therefore, we need a newer and more sophisticated system to subdue these shortcomings. We call this system an intrusion prevention system or IPS.
+
+In chapter \ref{chap:IDS} we will provide a detailed description of IDS and IPS. 
+
+\section{General security problems overview}
+
+Having defined intrusions, we can now dig deeper into how a cracker breaks into a private system or network. Unfortunately, there are many ways to do so and such an action is usually not a one-shot attempt. \\ \\
+One can devide the `intrusion life cycle' into three phases:
+\begin{enumerate}
+\item \textbf{Information gathering:} Reconnaissance or information gathering is an attempt to discover as much information as possible about the target system. Information being sought consists of DNS tables, open ports (that's why one needs a firewall discused in section \ref{Firewalls}), available hosts, OS type, etc\ldots. The information collected in this phase will eventually determine the type of attack, which is described in the next item.
+\item \textbf{The actual attack:} Various attack techniques exist, including password brute force attempts, buffer overflows, spoofing, etc\ldots. Upon a successful intrusion, the intruder will be able to gain control (or to crash) of the target system with all possible further consequences, including service disruption.
+\item \textbf{Profileration:} In this phase, the intruder aims to obtain sensitive or valuable information. Examples include copying files and recording screens or keystrokes. The intruder also ensures he can come back anytime to this compromised system by, for example, modifying firewall filtering rules. This is done to use this compromised system/network as a stepping stone to proceed further into the private network or/and to launch attacks against other (private) systems or networks. One shall obviously be familiar with the term DoS\footnote{DoS: a denial-of-service (DoS) attack is aimed at blocking availability of computer systems or services. It is an action (or set of actions) executed by a malicious entity to make a resource unavailable to its intended users \citep{Dos}.} or DDoS \footnote{DDoS: same as DoS, but the distributed format adds the ``many to one'' dimension that makes these attacks more difficult to prevent. First, it involves the target host that has been chosen to receive the brunt of the attack. Second, it involves the presence of multiple attack daemon agents. These are agent programs that actually conduct the attack on the target victim. Attack
+daemons are usually deployed in host computers. The third component of a distributed denial of service attack is the control master program. Its task is to coordinate the attack.
+Finally, there is the real attacker, the mastermind behind the attack. By using a control master program, the real attacker can stay behind the scenes of the attack \citep{Ddos}.}.
+\end{enumerate}
+
+In this paper, we present an introduction of intrusion detection / prevention systems as well as an in-depth study of Snort, an open source network prevention and detection program \citep{Snort}.
+
+IDS is the second line of defence\ldots.

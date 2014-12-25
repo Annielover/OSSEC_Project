@@ -1,0 +1,117 @@
+\documentclass[11pt, a4paper,svgnames]{report}
+\usepackage{fullpage}
+\usepackage{listings}
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage{datetime}
+
+\usepackage{url}
+\usepackage[square]{natbib}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\graphicspath{ {./images/} }
+
+\usepackage{minitoc}
+\setcounter {minitocdepth}{3} 
+\setlength{\mtcindent }{24pt}
+\renewcommand {\mtcfont}{\small\rm}
+\renewcommand {\mtcSfont}{\small\bf}
+% remove horizontal lines from mtc
+\nomtcrule
+
+\usepackage[USenglish]{babel}
+\usepackage{longtable}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{tikz}
+\usepackage{kpfonts}
+\usepackage[explicit]{titlesec}
+\definecolor{donkerrood}{RGB}{0,45,160}
+\definecolor{lichtrood}{RGB}{94,164,255}
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Huge\bfseries\scshape}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-3cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=lichtrood] (0,0) rectangle
+          (\paperwidth,3cm);
+        \node[anchor=east,xshift=.9\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=donkerrood]
+              {\color{white}\chapterlabel#1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{50pt}{-60pt}
+
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+~\vspace{70mm}
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Intrusion Detection Systems \\[0.4cm] }
+\HRule \\[1.0cm]
+\Large \textbf{Laurent De Wilde}\\Master of Science in the Applied Computer Sciences\\Faculty of Science and Bio-Engineering Sciences\\Vrije Universiteit Brussel\\
+\vspace{10 mm}
+\Large Supervisor: Prof. dr. Ir. Martin Timmerman \\
+\vspace{5 mm}
+\large Supervising assistant: dr. Long Peng \\
+\vspace{10 mm}
+\large November 24, 2014
+\end{center}
+\end{titlepage}
+% Use custom minicontents headers ("chapter contents" instead of "contents")
+\renewcommand{\mtctitle}{Chapter contents}
+
+% Abstract
+\include{Abstract}
+
+% Use the minicontents
+\dominitoc
+% Print the main table of contents
+\tableofcontents
+
+% List of Abbreviations
+\setcounter{mtc}{1}
+\include{Abbreviations}
+
+% Chapter 1
+\setcounter{mtc}{2}
+\include{./chapters/Chapter1}
+
+% Chapter 2
+\setcounter{mtc}{3}
+\include{./chapters/Chapter2}
+
+% Chapter 3
+\setcounter{mtc}{4}
+\include{./chapters/Chapter3}
+
+% Chapter 4
+\setcounter{mtc}{5}
+\include{./chapters/Chapter4}
+
+% Bibliography
+\newpage
+%\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{apalike}
+\bibliography{IDS}
+
+\end{document}
