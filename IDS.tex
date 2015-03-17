@@ -12,10 +12,14 @@
     urlcolor=black
 }
 
+\usepackage[labelfont=bf]{caption}
+
 \usepackage{datetime}
 
 \usepackage{url}
 \usepackage[square]{natbib}
+
+\usepackage{pdfpages} 
 
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
@@ -32,7 +36,7 @@
 
 \usepackage[USenglish]{babel}
 \usepackage{longtable}
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \usepackage{tikz}
 \usepackage{kpfonts}
 \usepackage[explicit]{titlesec}
@@ -61,21 +65,80 @@
 
 
 \begin{document}
-\begin{titlepage}
-\begin{center}
-~\vspace{70mm}
 
-\HRule \\[0.4cm]
-{ \huge \bfseries Intrusion Detection Systems \\[0.4cm] }
-\HRule \\[1.0cm]
-\Large \textbf{Laurent De Wilde}\\Master of Science in the Applied Computer Sciences\\Faculty of Science and Bio-Engineering Sciences\\Vrije Universiteit Brussel\\
-\vspace{10 mm}
-\Large Supervisor: Prof. dr. Ir. Martin Timmerman \\
-\vspace{5 mm}
-\large Supervising assistant: dr. Long Peng \\
-\vspace{10 mm}
-\large November 24, 2014
-\end{center}
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\center
+
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE VRIJE UNIVERSITEIT BRUSSEL}\\[1.5cm] 
+\textsc{\Large Faculty of Science and Bio-Engineering Sciences}\\[0.5cm] 
+\textsc{\large Department of Computer Sciences}\\[0.5cm] 
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.7cm]
+{ \huge \bfseries  Intrusion Detection Systems}\\[0.4cm] 
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Authors:}\\
+Laurent \textsc{De Wilde} \\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Professor:} \\
+Prof. dr. ir. Martin \textsc{Timmerman}
+
+\emph{Assistant:} \\
+dr. Long \textsc{Peng}
+\end{flushright}
+\end{minipage}\\[4cm]
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[3cm]
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=2.3in]{vub_schild.jpg}\\[4cm] 
+ 
+%----------------------------------------------------------------------------------------
+
+
+%--------------------------------------------------------
+% UITLEG VOOR FIGUREN IN TE VOEGEN
+%--------------------------------------------------------
+
+% Hieronder staat het standaard sjabloon om figuren in te voegen. De tekening wordt op exact die plaats getoond waar je dit stuk code invoegt. (zonder de % tekens uiteraard)
+
+% \begin{figure}[H]
+% \centering
+%   \includegraphics[width=0.9\textwidth]{NAAM-VAN-DE-TEKENING.jpg}
+%  \caption[Verkorte versie voor de List Of Figures]{Lange versie die op het document komt te staan}
+% \end{figure}
+
+%---------------------------------------------------------
+
+
 \end{titlepage}
 % Use custom minicontents headers ("chapter contents" instead of "contents")
 \renewcommand{\mtctitle}{Chapter contents}
@@ -107,6 +170,14 @@
 % Chapter 4
 \setcounter{mtc}{5}
 \include{./chapters/Chapter4}
+
+% Chapter 5
+\setcounter{mtc}{6}
+\include{./chapters/Chapter5}
+
+% Chapter 6
+\setcounter{mtc}{7}
+\include{./chapters/Chapter6}
 
 % Bibliography
 \newpage

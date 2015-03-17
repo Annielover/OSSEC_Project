@@ -1,14 +1,9 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}The problem}{\reset@font\mtcSfont 6}{section.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Intrusion Detection}{\reset@font\mtcSfont 7}{section.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}What is not an IDS?}{\reset@font\mtcSSfont 7}{subsection.2.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Architecture of intrusion detection systems}{\reset@font\mtcSfont 7}{section.2.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}The different types of IDS}{\reset@font\mtcSfont 9}{section.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Classification based on detection method}{\reset@font\mtcSSfont 9}{subsection.2.4.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.1.1}Anomaly-Based Intrusion Detection Systems}{\reset@font\mtcSSSfont 9}{subsubsection.2.4.1.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.1.2}Signature-Based Intrusion Detection Systems}{\reset@font\mtcSSSfont 10}{subsubsection.2.4.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Classification based on protective system}{\reset@font\mtcSSfont 11}{subsection.2.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.2.1}HIDS}{\reset@font\mtcSSSfont 11}{subsubsection.2.4.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.2.2}NIDS}{\reset@font\mtcSSSfont 12}{subsubsection.2.4.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Classification based on structure}{\reset@font\mtcSSfont 13}{subsection.2.4.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.1}Centralised}{\reset@font\mtcSSSfont 13}{subsubsection.2.4.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.4.3.2}Distributed}{\reset@font\mtcSSSfont 13}{subsubsection.2.4.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Intrusion Detection}{\reset@font\mtcSfont 6}{section.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}The different types of IDS}{\reset@font\mtcSfont 7}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Difference in detection method}{\reset@font\mtcSSfont 7}{subsection.2.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.1.1}Anomaly-Based Intrusion Detection Systems}{\reset@font\mtcSSSfont 7}{subsubsection.2.3.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.1.2}Signature-Based Intrusion Detection Systems}{\reset@font\mtcSSSfont 8}{subsubsection.2.3.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Classification based on protective system}{\reset@font\mtcSSfont 8}{subsection.2.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.1}HIDS}{\reset@font\mtcSSSfont 8}{subsubsection.2.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.3.2.2}NIDS}{\reset@font\mtcSSSfont 9}{subsubsection.2.3.2.2}}

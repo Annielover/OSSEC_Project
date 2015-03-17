@@ -1,0 +1,235 @@
+\begin{thebibliography}{}
+
+\bibitem[Abliz, 2011]{Dos}
+Abliz, M. (2011).
+\newblock {\em Internet Denial of Service Attacks and Defense Mechanisms}.
+\newblock University of Pittsburg, Pittsburg.
+
+\bibitem[Bace, 1998]{Host1}
+Bace, R. (1998).
+\newblock {\em An Introduction to Intrusion Detection \& Assessment}.
+\newblock Infidel Inc.
+
+\bibitem[Bace, 2000]{Host2}
+Bace, R.~G. (2000).
+\newblock {\em Intrusion Detection}.
+\newblock Macmillan Technical Publishing, New York.
+
+\bibitem[Beke, 2013]{Facebook}
+Beke, M. (2013).
+\newblock The social media landscape in belgium.
+\newblock {\em
+  http://www.slideshare.net/mathiasbeke/belgian-social-media-landscape}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[Burd, 2013]{SO1}
+Burd, D. (2013).
+\newblock Introduction to security onion.
+\newblock {\em
+  https://code.google.com/p/security-onion/wiki/IntroductionToSecurityOnion}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Carr, 2007]{Snort}
+Carr, J. (2007).
+\newblock Snort: Open source network intrusion prevention.
+\newblock {\em http://www.esecurityplanet.com/network-security/Snort Open
+  Source Network Intrusion Prevention 3681296.htm}.
+\newblock Retrieved on November 20, 2014.
+
+\bibitem[Cisco, 2015a]{Preprocessor1}
+Cisco (2015a).
+\newblock Preprocessors.
+\newblock {\em http://manual.snort.org/node17.html}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Cisco, 2015b]{SnortRules}
+Cisco (2015b).
+\newblock Rules headers.
+\newblock {\em http://manual.snort.org/node29.html}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Cisco, 2015c]{SnortLicense}
+Cisco (2015c).
+\newblock Snort license.
+\newblock {\em https://www.snort.org/licensel}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Cummin, 2010]{PP}
+Cummin (2010).
+\newblock Pulledpork - what is it about?
+\newblock {\em https://code.google.com/p/pulledpork/wiki/PulledPork}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Damaye, 2013]{Comp1}
+Damaye, S. (2013).
+\newblock Suricata-vs-snort.
+\newblock {\em http://www.aldeid.com/Suricata-vs-snort}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[De~Boer and Pels, 2005]{Report}
+De~Boer, P. and Pels, M. (2005).
+\newblock {\em Host-Based Intrusion Detection Systems}.
+
+\bibitem[Di~Pietro and Mancini, 2008]{Roberto}
+Di~Pietro, R. and Mancini, L.~V. (2008).
+\newblock {\em Intrusion Detection Systems}.
+\newblock Springer Science \& Business Media, Berlin.
+
+\bibitem[Dropbox, 2015]{Dropbox}
+Dropbox (2015).
+\newblock What is lan sync?
+\newblock {\em https://www.dropbox.com/en/help/137}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[Firnsy, 2010]{Barnyard1}
+Firnsy (2010).
+\newblock Barnyard2.
+\newblock {\em https://github.com/firnsy/barnyard2}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Garcia-Teodoro et~al., 2008]{CandS}
+Garcia-Teodoro, P., Diaz-Verdejo, J., Macia-Fernandez, G., and Vazquez, E.
+  (2008).
+\newblock {\em Anomaly-based network intrusion detection: Techniques, systems
+  and challenges}.
+\newblock Universidad Politecnica de Madrid, Madrid.
+
+\bibitem[Halliday, 2012]{Squert}
+Halliday, P. (2012).
+\newblock the squertproject.
+\newblock {\em http://www.squertproject.org/}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Heady et~al., 1990]{tr}
+Heady, R., Luger, G., Servilla, M., and Maccabe, A. (1990).
+\newblock The architecture of a network level intrusion detection system.
+
+\bibitem[Kazienko and Piotr, 2004]{windowssecurity2}
+Kazienko, P. and Piotr, D. (2004).
+\newblock Intrusion detection systems (ids) part 2 - classification; methods;
+  techniques.
+\newblock {\em
+  http://www.windowsecurity.com/articles-tutorials/intrusion\_detection/IDS-Part2-Classification-methods-techniques.html}.
+\newblock Retrieved on November 22, 2014.
+
+\bibitem[Kozierok, 2005]{osi}
+Kozierok, C.~M. (2005).
+\newblock The tcp/ip guide.
+\newblock {\em http://www.tcpipguide.com/free/ t\_ApplicationLayerLayer7.htm}.
+\newblock Retrieved on November 20, 2014.
+
+\bibitem[Koziol, 2003]{Preprocessor2}
+Koziol, J. (2003).
+\newblock Dissecting snort - preprocessors.
+\newblock {\em
+  http://www.informit.com/articles/article.aspx?p=101148\&seqNum=2}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Lau et~al., 2013]{Ddos}
+Lau, F., Rubin, S.~H., Smith, M.~H., and Trajkovic, L. (2013).
+\newblock {\em Distributed Denial of Service Attacks}.
+\newblock Simon Fraser University, Burnaby.
+
+\bibitem[Northrop, 2013]{Barnyard2}
+Northrop, E. (2013).
+\newblock Barnyard2.
+\newblock {\em http://www.forensicswiki.org/wiki/Barnyard2}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[OISF, 2014]{Suricata2}
+OISF (2014).
+\newblock What is suricata.
+\newblock {\em
+  https://redmine.openinfosecfoundation.org/projects/suricata/wiki/What\_is\_Suricata}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[OISF, 2015]{Suricata1}
+OISF (2015).
+\newblock Suricata downloads.
+\newblock {\em
+  http://www.openinfosecfoundation.org/index.php/download-suricata}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[O'Leary, 2013]{IDS}
+O'Leary, D.~E. (2013).
+\newblock Intrusion detection systems.
+\newblock {\em https://msbfile03.usc.edu/digitalmeasures/
+  doleary/intellcont/Intrusion Detecion and Continuous Auditing-1.pdf}.
+
+\bibitem[Paxson, 1999]{Bro1}
+Paxson, V. (1999).
+\newblock {\em Bro: A System for Detecting Network Intruders in Real-Time}.
+\newblock Lawrence Berkeley National Laboratory, Berkeley, CA, USA.
+
+\bibitem[Project, 2013a]{Bro2}
+Project, T.~B. (2013a).
+\newblock Introduction - overview.
+\newblock {\em https://www.bro.org/sphinx/intro/index.html}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[Project, 2013b]{Comp3}
+Project, T.~B. (2013b).
+\newblock Introduction - overview.
+\newblock {\em https://www.bro.org/sphinx/intro/index.html}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[Roesch, 1999]{SnortChap3}
+Roesch, M. (1999).
+\newblock {\em Snort - Lightweight Intrusion Detection for Networks}.
+\newblock Usenix Association.
+
+\bibitem[Rouse, 2008]{Prom}
+Rouse, M. (2008).
+\newblock Promiscuous mode.
+\newblock {\em
+  http://searchsecurity.techtarget.com/definition/promiscuous-mode}.
+\newblock Retrieved on November 28, 2014.
+
+\bibitem[Schools, 2015]{SQLInj}
+Schools, W. (2015).
+\newblock Sql injection.
+\newblock {\em http://www.w3schools.com/sql/sql\_injection.asp}.
+\newblock Retrieved on January 24, 2015.
+
+\bibitem[Shipley, 1999]{Sniffing}
+Shipley, G. (1999).
+\newblock Intrusion detection, take two.
+\newblock {\em http://www.networkcomputing.com/1023/1023f1.html}.
+\newblock Retrieved on November 29, 2014.
+
+\bibitem[Sid, 2014]{OSSEC}
+Sid, D.~B. (2014).
+\newblock Ossec - home.
+\newblock {\em http://www.ossec.net}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Smith, 2015]{Comp2}
+Smith, E. (2015).
+\newblock Snort vs suricata.
+\newblock {\em http://aanval.com/Snort\_vs\_Suricata}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[SourceForge, 2014]{SnortSF}
+SourceForge (2014).
+\newblock Snort.
+\newblock {\em http://sourceforge.net/projects/snort/}.
+\newblock Retrieved on January 25, 2015.
+
+\bibitem[Tipton and Krause, 2007]{76}
+Tipton, H.~F. and Krause, F. (2007).
+\newblock {\em Information Security Management Handbook}, volume~6.
+\newblock CRC Press, Boca Raton.
+
+\bibitem[Visscher, 2014]{Sguil}
+Visscher, B. (2014).
+\newblock Sguil: The analyst console for network security monitoring.
+\newblock {\em http://bammv.github.io/sguil/index.html}.
+\newblock Retrieved on January 23, 2015.
+
+\bibitem[Webber, 2015]{Snorby}
+Webber, D. (2015).
+\newblock Snorby, all about simplicity.
+\newblock {\em https://www.snorby.org/}.
+\newblock Retrieved on January 23, 2015.
+
+\end{thebibliography}

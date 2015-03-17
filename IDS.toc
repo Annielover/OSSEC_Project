@@ -1,0 +1,76 @@
+\select@language {USenglish}
+\contentsline {chapter}{Abstract}{1}{Doc-Start}
+\contentsline {chapter}{List Of Abbreviations}{3}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Intrusions}{4}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Intrusion Prevention Systems}{4}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}General security problems overview}{5}{section.1.2}
+\contentsline {chapter}{\numberline {2}Intrusion Detection Systems}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}The problem}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Intrusion Detection}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}The different types of IDS}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Difference in detection method}{7}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Anomaly-Based Intrusion Detection Systems}{7}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Signature-Based Intrusion Detection Systems}{8}{subsubsection.2.3.1.2}
+\contentsline {subsection}{\numberline {2.3.2}Classification based on protective system}{8}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}HIDS}{8}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}NIDS}{9}{subsubsection.2.3.2.2}
+\contentsline {chapter}{\numberline {3}Comparision of free IDSs}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Network Intrusion Detection Systems}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}The tools}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Comparision}{11}{section.3.3}
+\contentsline {chapter}{\numberline {4}Snort and Security Onion}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}What is Snort?}{14}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Preprocessors}{14}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}PulledPork}{15}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Barnyard2}{15}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}What is Security Onion?}{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Packet capturing}{15}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}NIDS and HIDS}{15}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Analyis tools}{16}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Deployment scenarios}{16}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Installation and configuration of Security Onion}{16}{section.4.3}
+\contentsline {chapter}{\numberline {5}Testing and configuring Snort}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{30}{section.5.1}
+\contentsline {section}{\numberline {5.2}Testing environment}{30}{section.5.2}
+\contentsline {section}{\numberline {5.3}What types of attacks will be performed?}{31}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Motivation for the choice of the attacks}{31}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Testing methods}{32}{section.5.4}
+\contentsline {section}{\numberline {5.5}First things first: basic configuration of Snort}{32}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Configuring Snort rules}{35}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Updating the rules using PulledPork}{36}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Confirming that Snort is actually working}{36}{section.5.6}
+\contentsline {section}{\numberline {5.7}The actual penetration testing / attacks}{37}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Port scans}{37}{subsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.1.1}Unfragmented packets}{37}{subsubsection.5.7.1.1}
+\contentsline {subsubsection}{\numberline {5.7.1.2}Fragmented SYN packets}{38}{subsubsection.5.7.1.2}
+\contentsline {subsubsection}{\numberline {5.7.1.3}NULL and XMAS scans}{38}{subsubsection.5.7.1.3}
+\contentsline {subsection}{\numberline {5.7.2}Webserver attacks}{40}{subsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.2.1}Testing for web traffic}{40}{subsubsection.5.7.2.1}
+\contentsline {subsubsection}{\numberline {5.7.2.2}VISA Card numbers sent in plain text}{40}{subsubsection.5.7.2.2}
+\contentsline {subsubsection}{\numberline {5.7.2.3}Cross-site scripting (XSS) attack}{42}{subsubsection.5.7.2.3}
+\contentsline {subsubsection}{\numberline {5.7.2.4}SQL Injection}{44}{subsubsection.5.7.2.4}
+\contentsline {subsubsection}{\numberline {5.7.2.5}Command injection}{47}{subsubsection.5.7.2.5}
+\contentsline {subsection}{\numberline {5.7.3}FTP server attacks}{49}{subsection.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.3.1}Testing for FTP Traffic}{49}{subsubsection.5.7.3.1}
+\contentsline {subsubsection}{\numberline {5.7.3.2}FTP Root access}{49}{subsubsection.5.7.3.2}
+\contentsline {subsubsection}{\numberline {5.7.3.3}FTP attack using Metasploit}{50}{subsubsection.5.7.3.3}
+\contentsline {subsection}{\numberline {5.7.4}SSH attacks}{52}{subsection.5.7.4}
+\contentsline {subsubsection}{\numberline {5.7.4.1}SSH bruteforcing}{52}{subsubsection.5.7.4.1}
+\contentsline {subsection}{\numberline {5.7.5}SMB attacks}{54}{subsection.5.7.5}
+\contentsline {subsubsection}{\numberline {5.7.5.1}Bruteforcing (dictionary attacking) an SMB server}{54}{subsubsection.5.7.5.1}
+\contentsline {subsubsection}{\numberline {5.7.5.2}List the shares on an SMB server}{57}{subsubsection.5.7.5.2}
+\contentsline {subsection}{\numberline {5.7.6}Database attacks}{59}{subsection.5.7.6}
+\contentsline {subsubsection}{\numberline {5.7.6.1}Database scanning}{59}{subsubsection.5.7.6.1}
+\contentsline {subsubsection}{\numberline {5.7.6.2}Database login bruteforcing}{61}{subsubsection.5.7.6.2}
+\contentsline {subsection}{\numberline {5.7.7}Trojan injections}{62}{subsection.5.7.7}
+\contentsline {subsection}{\numberline {5.7.8}DOS attacks}{66}{subsection.5.7.8}
+\contentsline {section}{\numberline {5.8}False alerts}{68}{section.5.8}
+\contentsline {section}{\numberline {5.9}Additional configuration and fine-tuning Sguil}{69}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Configuring Sguil}{72}{subsection.5.9.1}
+\contentsline {subsubsection}{\numberline {5.9.1.1}Listing the top 20 signatures}{73}{subsubsection.5.9.1.1}
+\contentsline {subsubsection}{\numberline {5.9.1.2}Setting thresholds and limitations on alerts}{73}{subsubsection.5.9.1.2}
+\contentsline {chapter}{\numberline {6}Miscellaneous and conclusions}{76}{chapter.6}
+\contentsline {section}{\numberline {6.1}Sguil database optimization}{76}{section.6.1}
+\contentsline {section}{\numberline {6.2}General additional information}{78}{section.6.2}
+\contentsline {section}{\numberline {6.3}Conclusions}{81}{section.6.3}

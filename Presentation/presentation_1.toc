@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{What is an IDS?}{3}{0}{1}
+\beamer@sectionintoc {2}{Snort}{4}{0}{2}
+\beamer@sectionintoc {3}{Testing and configuring Snort}{5}{0}{3}
+\beamer@sectionintoc {4}{Additional configuration}{37}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{42}{0}{5}

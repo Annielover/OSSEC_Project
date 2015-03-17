@@ -1,0 +1,39 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Introduction}{\reset@font\mtcSfont 30}{section.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Testing environment}{\reset@font\mtcSfont 30}{section.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}What types of attacks will be performed?}{\reset@font\mtcSfont 31}{section.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Motivation for the choice of the attacks}{\reset@font\mtcSSfont 31}{subsection.5.3.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Testing methods}{\reset@font\mtcSfont 32}{section.5.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}First things first: basic configuration of Snort}{\reset@font\mtcSfont 32}{section.5.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}Configuring Snort rules}{\reset@font\mtcSSfont 35}{subsection.5.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.2}Updating the rules using PulledPork}{\reset@font\mtcSSfont 36}{subsection.5.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Confirming that Snort is actually working}{\reset@font\mtcSfont 36}{section.5.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}The actual penetration testing / attacks}{\reset@font\mtcSfont 37}{section.5.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.1}Port scans}{\reset@font\mtcSSfont 37}{subsection.5.7.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.1.1}Unfragmented packets}{\reset@font\mtcSSSfont 37}{subsubsection.5.7.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.1.2}Fragmented SYN packets}{\reset@font\mtcSSSfont 38}{subsubsection.5.7.1.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.1.3}NULL and XMAS scans}{\reset@font\mtcSSSfont 38}{subsubsection.5.7.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.2}Webserver attacks}{\reset@font\mtcSSfont 40}{subsection.5.7.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.2.1}Testing for web traffic}{\reset@font\mtcSSSfont 40}{subsubsection.5.7.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.2.2}VISA Card numbers sent in plain text}{\reset@font\mtcSSSfont 40}{subsubsection.5.7.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.2.3}Cross-site scripting (XSS) attack}{\reset@font\mtcSSSfont 42}{subsubsection.5.7.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.2.4}SQL Injection}{\reset@font\mtcSSSfont 44}{subsubsection.5.7.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.2.5}Command injection}{\reset@font\mtcSSSfont 47}{subsubsection.5.7.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.3}FTP server attacks}{\reset@font\mtcSSfont 49}{subsection.5.7.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.3.1}Testing for FTP Traffic}{\reset@font\mtcSSSfont 49}{subsubsection.5.7.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.3.2}FTP Root access}{\reset@font\mtcSSSfont 49}{subsubsection.5.7.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.3.3}FTP attack using Metasploit}{\reset@font\mtcSSSfont 50}{subsubsection.5.7.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.4}SSH attacks}{\reset@font\mtcSSfont 52}{subsection.5.7.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.4.1}SSH bruteforcing}{\reset@font\mtcSSSfont 52}{subsubsection.5.7.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.5}SMB attacks}{\reset@font\mtcSSfont 54}{subsection.5.7.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.5.1}Bruteforcing (dictionary attacking) an SMB server}{\reset@font\mtcSSSfont 54}{subsubsection.5.7.5.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.5.2}List the shares on an SMB server}{\reset@font\mtcSSSfont 57}{subsubsection.5.7.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.6}Database attacks}{\reset@font\mtcSSfont 59}{subsection.5.7.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.6.1}Database scanning}{\reset@font\mtcSSSfont 59}{subsubsection.5.7.6.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.7.6.2}Database login bruteforcing}{\reset@font\mtcSSSfont 61}{subsubsection.5.7.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.7}Trojan injections}{\reset@font\mtcSSfont 62}{subsection.5.7.7}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.7.8}DOS attacks}{\reset@font\mtcSSfont 66}{subsection.5.7.8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.8}False alerts}{\reset@font\mtcSfont 68}{section.5.8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.9}Additional configuration and fine-tuning Sguil}{\reset@font\mtcSfont 69}{section.5.9}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.9.1}Configuring Sguil}{\reset@font\mtcSSfont 72}{subsection.5.9.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.9.1.1}Listing the top 20 signatures}{\reset@font\mtcSSSfont 73}{subsubsection.5.9.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.9.1.2}Setting thresholds and limitations on alerts}{\reset@font\mtcSSSfont 73}{subsubsection.5.9.1.2}}

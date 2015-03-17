@@ -1,0 +1,75 @@
+\BOOKMARK [0][-]{Doc-Start}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{List Of Abbreviations}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Intrusions}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.1}{Intrusion Prevention Systems}{section.1.1}% 5
+\BOOKMARK [1][-]{section.1.2}{General security problems overview}{chapter.1}% 6
+\BOOKMARK [0][-]{chapter.2}{Intrusion Detection Systems}{}% 7
+\BOOKMARK [1][-]{section.2.1}{The problem}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.2}{Intrusion Detection}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{The different types of IDS}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.3.1}{Difference in detection method}{section.2.3}% 11
+\BOOKMARK [3][-]{subsubsection.2.3.1.1}{Anomaly-Based Intrusion Detection Systems}{subsection.2.3.1}% 12
+\BOOKMARK [3][-]{subsubsection.2.3.1.2}{Signature-Based Intrusion Detection Systems}{subsection.2.3.1}% 13
+\BOOKMARK [2][-]{subsection.2.3.2}{Classification based on protective system}{section.2.3}% 14
+\BOOKMARK [3][-]{subsubsection.2.3.2.1}{HIDS}{subsection.2.3.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.3.2.2}{NIDS}{subsection.2.3.2}% 16
+\BOOKMARK [0][-]{chapter.3}{Comparision of free IDSs}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Network Intrusion Detection Systems}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{The tools}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Comparision}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Snort and Security Onion}{}% 21
+\BOOKMARK [1][-]{section.4.1}{What is Snort?}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.1.1}{Preprocessors}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.2}{PulledPork}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.3}{Barnyard2}{section.4.1}% 25
+\BOOKMARK [1][-]{section.4.2}{What is Security Onion?}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.2.1}{Packet capturing}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.2}{NIDS and HIDS}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.3}{Analyis tools}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.4}{Deployment scenarios}{section.4.2}% 30
+\BOOKMARK [1][-]{section.4.3}{Installation and configuration of Security Onion}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Testing and configuring Snort}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.2}{Testing environment}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.3}{What types of attacks will be performed?}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.3.1}{Motivation for the choice of the attacks}{section.5.3}% 36
+\BOOKMARK [1][-]{section.5.4}{Testing methods}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.5}{First things first: basic configuration of Snort}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.5.1}{Configuring Snort rules}{section.5.5}% 39
+\BOOKMARK [2][-]{subsection.5.5.2}{Updating the rules using PulledPork}{section.5.5}% 40
+\BOOKMARK [1][-]{section.5.6}{Confirming that Snort is actually working}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.7}{The actual penetration testing / attacks}{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.5.7.1}{Port scans}{section.5.7}% 43
+\BOOKMARK [3][-]{subsubsection.5.7.1.1}{Unfragmented packets}{subsection.5.7.1}% 44
+\BOOKMARK [3][-]{subsubsection.5.7.1.2}{Fragmented SYN packets}{subsection.5.7.1}% 45
+\BOOKMARK [3][-]{subsubsection.5.7.1.3}{NULL and XMAS scans}{subsection.5.7.1}% 46
+\BOOKMARK [2][-]{subsection.5.7.2}{Webserver attacks}{section.5.7}% 47
+\BOOKMARK [3][-]{subsubsection.5.7.2.1}{Testing for web traffic}{subsection.5.7.2}% 48
+\BOOKMARK [3][-]{subsubsection.5.7.2.2}{VISA Card numbers sent in plain text}{subsection.5.7.2}% 49
+\BOOKMARK [3][-]{subsubsection.5.7.2.3}{Cross-site scripting \(XSS\) attack}{subsection.5.7.2}% 50
+\BOOKMARK [3][-]{subsubsection.5.7.2.4}{SQL Injection}{subsection.5.7.2}% 51
+\BOOKMARK [3][-]{subsubsection.5.7.2.5}{Command injection}{subsection.5.7.2}% 52
+\BOOKMARK [2][-]{subsection.5.7.3}{FTP server attacks}{section.5.7}% 53
+\BOOKMARK [3][-]{subsubsection.5.7.3.1}{Testing for FTP Traffic}{subsection.5.7.3}% 54
+\BOOKMARK [3][-]{subsubsection.5.7.3.2}{FTP Root access}{subsection.5.7.3}% 55
+\BOOKMARK [3][-]{subsubsection.5.7.3.3}{FTP attack using Metasploit}{subsection.5.7.3}% 56
+\BOOKMARK [2][-]{subsection.5.7.4}{SSH attacks}{section.5.7}% 57
+\BOOKMARK [3][-]{subsubsection.5.7.4.1}{SSH bruteforcing}{subsection.5.7.4}% 58
+\BOOKMARK [2][-]{subsection.5.7.5}{SMB attacks}{section.5.7}% 59
+\BOOKMARK [3][-]{subsubsection.5.7.5.1}{Bruteforcing \(dictionary attacking\) an SMB server}{subsection.5.7.5}% 60
+\BOOKMARK [3][-]{subsubsection.5.7.5.2}{List the shares on an SMB server}{subsection.5.7.5}% 61
+\BOOKMARK [2][-]{subsection.5.7.6}{Database attacks}{section.5.7}% 62
+\BOOKMARK [3][-]{subsubsection.5.7.6.1}{Database scanning}{subsection.5.7.6}% 63
+\BOOKMARK [3][-]{subsubsection.5.7.6.2}{Database login bruteforcing}{subsection.5.7.6}% 64
+\BOOKMARK [2][-]{subsection.5.7.7}{Trojan injections}{section.5.7}% 65
+\BOOKMARK [2][-]{subsection.5.7.8}{DOS attacks}{section.5.7}% 66
+\BOOKMARK [1][-]{section.5.8}{False alerts}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.9}{Additional configuration and fine-tuning Sguil}{chapter.5}% 68
+\BOOKMARK [2][-]{subsection.5.9.1}{Configuring Sguil}{section.5.9}% 69
+\BOOKMARK [3][-]{subsubsection.5.9.1.1}{Listing the top 20 signatures}{subsection.5.9.1}% 70
+\BOOKMARK [3][-]{subsubsection.5.9.1.2}{Setting thresholds and limitations on alerts}{subsection.5.9.1}% 71
+\BOOKMARK [0][-]{chapter.6}{Miscellaneous and conclusions}{}% 72
+\BOOKMARK [1][-]{section.6.1}{Sguil database optimization}{chapter.6}% 73
+\BOOKMARK [1][-]{section.6.2}{General additional information}{chapter.6}% 74
+\BOOKMARK [1][-]{section.6.3}{Conclusions}{chapter.6}% 75

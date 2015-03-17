@@ -1,0 +1,169 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Testing and configuring Snort}{29}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {xchapter}{Testing and configuring Snort}{29}{chapter.5}}
+\@writefile{lot}{\contentsline {xchapter}{Testing and configuring Snort}{29}{chapter.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{30}{section.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Testing environment}{30}{section.5.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}What types of attacks will be performed?}{31}{section.5.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Motivation for the choice of the attacks}{31}{subsection.5.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Testing methods}{32}{section.5.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}First things first: basic configuration of Snort}{32}{section.5.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Network settings are correct. eth0, the management interface received an IP address from the DHCP server. eth1 runs in promiscious mode and captures all the packets on the network. No IP address has been set (as it should be).\relax }}{32}{figure.caption.24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Confirmation of the network settings.\relax }}{32}{figure.caption.25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces We are working on the 192.168.1.0/24 network, but by means of testing, we have setup Snort to listen on the /16 subnet (255.255.0.0). As it will turn out, this will \textbf  {not} affect the correct working of Snort. So one could randomly choose a value (8,16 or 24).\relax }}{34}{figure.caption.26}}
+\citation{SnortRules}
+\citation{SnortRules}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Configuring Snort rules}{35}{subsection.5.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Updating the rules using PulledPork}{36}{subsection.5.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces After PulledPort has run, one can notice that 19 new rules have been downloaded and added to the ruleset of Snort.\relax }}{36}{figure.caption.27}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Confirming that Snort is actually working}{36}{section.5.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Everything is running fine.\relax }}{36}{figure.caption.28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Ping traffic gets picked up by Snort.\relax }}{37}{figure.caption.29}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}The actual penetration testing / attacks}{37}{section.5.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.1}Port scans}{37}{subsection.5.7.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.1.1}Unfragmented packets}{37}{subsubsection.5.7.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Unfragmented port scanning gets picked up by Snort.\relax }}{37}{figure.caption.30}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.1.2}Fragmented SYN packets}{38}{subsubsection.5.7.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Rules to detect SYN port scans\relax }}{38}{figure.caption.31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Frag3 preprocessor enabled\relax }}{38}{figure.caption.32}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.1.3}NULL and XMAS scans}{38}{subsubsection.5.7.1.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Rules to detect NULL and XMAS port scans\relax }}{39}{figure.caption.33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces This time, NULL and XMAS scans are detected\relax }}{39}{figure.caption.34}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.2}Webserver attacks}{40}{subsection.5.7.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2.1}Testing for web traffic}{40}{subsubsection.5.7.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Snort sees the HTTP traffic and alerts for it.\relax }}{40}{figure.caption.35}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2.2}VISA Card numbers sent in plain text}{40}{subsubsection.5.7.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces The Snort rule to detect plain text VISA numbers sent in plain text over the network.\relax }}{40}{figure.caption.36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces The VISA Card number entered in the textfield and the submission of the data in the textfield.\relax }}{41}{figure.caption.37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Snort alerts for the VISA Card numbers sent in plain text over the network.\relax }}{41}{figure.caption.38}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2.3}Cross-site scripting (XSS) attack}{42}{subsubsection.5.7.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces The vulnerable webpage before the attack. It displays the string value that is provided in the ``name'' parameter in the URL\relax }}{42}{figure.caption.39}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces The script in action\ldots  \relax }}{42}{figure.caption.40}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces The script is successfully injected into the PHP page.\relax }}{43}{figure.caption.41}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Fortunately, Snort detects the XSS attack without the need for adding additional rules.\relax }}{43}{figure.caption.42}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces To prevent XSS attacks from happening, one can change ``alert'' to ``drop'' in the rules that triggers the alert.\relax }}{43}{figure.caption.43}}
+\citation{SQLInj}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2.4}SQL Injection}{44}{subsubsection.5.7.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.21}{\ignorespaces Persons table in the test database running on MySQL 5.6 populated with 3 records.\relax }}{44}{figure.caption.44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.22}{\ignorespaces Persons table in the test database running on MySQL 5.6 populated with 3 records.\relax }}{45}{figure.caption.45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.23}{\ignorespaces Persons table in the test database running on MySQL 5.6 populated with 3 records.\relax }}{45}{figure.caption.46}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.24}{\ignorespaces SQL injection attack in action with all the results displayed on the webpage.\relax }}{46}{figure.caption.47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.25}{\ignorespaces Snort alerts for a possible SQL injection.\relax }}{46}{figure.caption.48}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.26}{\ignorespaces The triggering rule. Once again, one could change ``alert'' to ``drop'' in order to prevent the SQL injection from happening.\relax }}{46}{figure.caption.49}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2.5}Command injection}{47}{subsubsection.5.7.2.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.27}{\ignorespaces The source code of the webpage. Note the ``shell\_exec'' statement.  \relax }}{47}{figure.caption.50}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.28}{\ignorespaces An command injection attack has just been launched and the results of executing the ipconfig command are displayed on the webpage.\relax }}{47}{figure.caption.51}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.29}{\ignorespaces Snort alerting for command injections\relax }}{48}{figure.caption.52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.3}FTP server attacks}{49}{subsection.5.7.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.3.1}Testing for FTP Traffic}{49}{subsubsection.5.7.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.30}{\ignorespaces Rule for alerting on any traffic on port 21\relax }}{49}{figure.caption.53}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.31}{\ignorespaces OK!\relax }}{49}{figure.caption.54}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.3.2}FTP Root access}{49}{subsubsection.5.7.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.32}{\ignorespaces Logging in as root\ldots  \relax }}{49}{figure.caption.55}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.33}{\ignorespaces Additional rules for detecting root logins.\relax }}{50}{figure.caption.56}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.34}{\ignorespaces This time, Snort detects root logins. Note that this can be prevented by changing ``alert'' to ``drop''.\relax }}{50}{figure.caption.57}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.3.3}FTP attack using Metasploit}{50}{subsubsection.5.7.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.35}{\ignorespaces Include the downloaded rules in Snort.\relax }}{50}{figure.caption.58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.36}{\ignorespaces Ready to perform the pownage on port 21 of the victim with IP address of 192.168.1.17\relax }}{51}{figure.caption.59}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.37}{\ignorespaces Snort is able to catch the attacks peformed on the FTP server.\relax }}{51}{figure.caption.60}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.4}SSH attacks}{52}{subsection.5.7.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.4.1}SSH bruteforcing}{52}{subsubsection.5.7.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.38}{\ignorespaces The required SSH login plugin is loaded into Metasploit\relax }}{52}{figure.caption.61}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.39}{\ignorespaces The file containing the usernames and passwords is loaded into Metasploit.\relax }}{52}{figure.caption.62}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.40}{\ignorespaces Some other options are configured and everything is put together.\relax }}{52}{figure.caption.63}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.41}{\ignorespaces Bruteforcing in action\ldots  \relax }}{53}{figure.caption.64}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.42}{\ignorespaces Snort alerting for SSH bruteforcing.\relax }}{53}{figure.caption.65}}
+\citation{Facebook}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.5}SMB attacks}{54}{subsection.5.7.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.5.1}Bruteforcing (dictionary attacking) an SMB server}{54}{subsubsection.5.7.5.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.43}{\ignorespaces Bruteforce the Samba server using a seperate username and password file.\relax }}{54}{figure.caption.66}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.44}{\ignorespaces Bruteforce process in action\ldots  \relax }}{55}{figure.caption.67}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.45}{\ignorespaces Snort detects the bruteforcing attempts and alerts so.\relax }}{55}{figure.caption.68}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.46}{\ignorespaces Confirmation that one is able to login with the credentials found by the bruteforcing attack.\relax }}{56}{figure.caption.69}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.5.2}List the shares on an SMB server}{57}{subsubsection.5.7.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.47}{\ignorespaces Listing of the available shares on the target server.\relax }}{57}{figure.caption.70}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.48}{\ignorespaces Listing of the available users on the target server.\relax }}{58}{figure.caption.71}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.49}{\ignorespaces Detecting regular share access\ldots  \relax }}{58}{figure.caption.72}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.50}{\ignorespaces and detecting admin share access.\relax }}{58}{figure.caption.73}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.6}Database attacks}{59}{subsection.5.7.6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.6.1}Database scanning}{59}{subsubsection.5.7.6.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.51}{\ignorespaces Looking for MySQL servers running on the network\ldots  \relax }}{59}{figure.caption.74}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.52}{\ignorespaces Snort does not agree with this and sends an alert\relax }}{59}{figure.caption.75}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.53}{\ignorespaces Additional rules for detecting root login and showing databases.\relax }}{59}{figure.caption.76}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.54}{\ignorespaces The attacker logs in as root and wants to see all the databases\ldots  \relax }}{60}{figure.caption.77}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.55}{\ignorespaces The added rules work!\relax }}{60}{figure.caption.78}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.6.2}Database login bruteforcing}{61}{subsubsection.5.7.6.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.56}{\ignorespaces Bruteforce attack in action\ldots  \relax }}{61}{figure.caption.79}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.57}{\ignorespaces The bruteforce attack is reported.\relax }}{61}{figure.caption.80}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.7}Trojan injections}{62}{subsection.5.7.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.58}{\ignorespaces Setting up the trojan.\relax }}{62}{figure.caption.81}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.59}{\ignorespaces The generated trojan horse.\relax }}{63}{figure.caption.82}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.60}{\ignorespaces Setting up the listener.\relax }}{63}{figure.caption.83}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.61}{\ignorespaces A user has clicked on the trojan and a sessions has been opened.\relax }}{64}{figure.caption.84}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.62}{\ignorespaces Executing some commands on the victim\ldots  \relax }}{65}{figure.caption.85}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.63}{\ignorespaces The attack is reported.\relax }}{65}{figure.caption.86}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.8}DOS attacks}{66}{subsection.5.7.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.64}{\ignorespaces Initiating the attack.\relax }}{66}{figure.caption.87}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.65}{\ignorespaces The DOS attack in action as seen from Windows Task Manager.\relax }}{66}{figure.caption.88}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.66}{\ignorespaces The DOS attack in action as seen in Wireshark.\relax }}{67}{figure.caption.89}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.67}{\ignorespaces The attack is reported by Snort.\relax }}{67}{figure.caption.90}}
+\citation{Dropbox}
+\@writefile{toc}{\contentsline {section}{\numberline {5.8}False alerts}{68}{section.5.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.68}{\ignorespaces Snort sees the broadcasting of Dropbox as an intrusion. This can be fixed by commenting the rule that is triggering the alert.\relax }}{68}{figure.caption.91}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.9}Additional configuration and fine-tuning Sguil}{69}{section.5.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.69}{\ignorespaces Category II (C2): FTP Root access falls into this category.\relax }}{69}{figure.caption.92}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.70}{\ignorespaces Category III (C3): MySQL bruteforcing falls into this category.\relax }}{69}{figure.caption.93}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.71}{\ignorespaces Category IV (C4): the DOS attack on our webserver can be put in this category.\relax }}{70}{figure.caption.94}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.72}{\ignorespaces Category VI (C6): Portscans can be placed in this category.\relax }}{70}{figure.caption.95}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.73}{\ignorespaces Category VII (C7): The trojan falls into this category.\relax }}{70}{figure.caption.96}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.74}{\ignorespaces Non classified: ICMP ping traffic.\relax }}{71}{figure.caption.97}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.75}{\ignorespaces Custom rules added to the file ``autocat.conf''. For example, VISA transferred in plain text over the network is automatically placed in category V (5).\relax }}{71}{figure.caption.98}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.9.1}Configuring Sguil}{72}{subsection.5.9.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.76}{\ignorespaces 107 tables are present in the Sguil database at the time of capturing this screenshot. Note that per day, additional tables are added.\relax }}{72}{figure.caption.99}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.77}{\ignorespaces 271307 events were generated IN TOTAL.\relax }}{73}{figure.caption.100}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.9.1.1}Listing the top 20 signatures}{73}{subsubsection.5.9.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.78}{\ignorespaces One can observe that the rule `HTTP Traffic' has been triggered many times.\relax }}{73}{figure.caption.101}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.9.1.2}Setting thresholds and limitations on alerts}{73}{subsubsection.5.9.1.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.79}{\ignorespaces The HTTP alerts came from a host with IP address 192.168.1.40.\relax }}{74}{figure.caption.102}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.80}{\ignorespaces The HTTP alerts came from a host with IP address 192.168.1.40.\relax }}{74}{figure.caption.103}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.81}{\ignorespaces Limitation: here we limit the alerting of signature `HTTP Traffic' to 100 every hour.\relax }}{74}{figure.caption.104}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.82}{\ignorespaces Combination of suppression and limitation: alert every 1 time the `HTTP Traffic' rule is triggered during a half-hour interval.\relax }}{75}{figure.caption.105}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.83}{\ignorespaces Suppression: here we suppress `HTTP Traffic' completely for the host with IP address 192.168.1.40 (the host were the alerts originated.\relax }}{75}{figure.caption.106}}
+\@setckpt{./chapters/Chapter5}{
+\setcounter{page}{76}
+\setcounter{equation}{0}
+\setcounter{enumi}{8}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{5}
+\setcounter{section}{9}
+\setcounter{subsection}{1}
+\setcounter{subsubsection}{2}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{83}
+\setcounter{table}{0}
+\setcounter{lstnumber}{1}
+\setcounter{Item}{11}
+\setcounter{Hfootnote}{4}
+\setcounter{bookmark@seq@number}{71}
+\setcounter{ContinuedFloat}{0}
+\setcounter{NAT@ctr}{0}
+\setcounter{AM@survey}{0}
+\setcounter{mtc}{7}
+\setcounter{minitocdepth}{3}
+\setcounter{ptc}{0}
+\setcounter{parttocdepth}{2}
+\setcounter{LT@tables}{1}
+\setcounter{LT@chunks}{1}
+\setcounter{parentequation}{0}
+\setcounter{lstlisting}{0}
+\setcounter{section@level}{0}
+}
